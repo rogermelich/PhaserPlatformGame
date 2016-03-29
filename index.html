@@ -38,7 +38,7 @@ Hola!
         //Icon Star
         game.add.sprite(140, 110, 'star');
 
-        //Icon Dude
+        //Icon Star
         game.add.sprite(300, 260, 'star');
 
         //  The platforms group contains the ground and the 2 ledges we can jump on
@@ -82,6 +82,8 @@ Hola!
     }
 
     function update() {
+        //  Collide the player and the stars with the platforms
+        game.physics.arcade.collide(player, platforms);
     }
 
 </script>
