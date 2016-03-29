@@ -1,0 +1,22 @@
+{
+  "name": "hellophaser",
+  "version": "1.0.0",
+  "description": "Hello World Phaser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogermelich/HelloPhaser.git"
+  },
+  "author": "Roger Melich Curto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogermelich/HelloPhaser/issues"
+  },
+  "homepage": "https://github.com/rogermelich/HelloPhaser#readme",
+  "dependencies": {
+    "phaser": "^2.4.6"
+  }
+}
