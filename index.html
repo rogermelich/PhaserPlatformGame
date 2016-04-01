@@ -82,6 +82,19 @@ Hola!
         player.animations.add('left', [0, 1, 2, 3], 10, true);
         player.animations.add('right', [5, 6, 7, 8], 10, true);
 
+        //  Create a 12 Stars
+        for (var i = 0; i < 12; i++)
+        {
+            //  Create a star inside of the 'stars' group
+            var star = stars.create(i * 70, 0, 'star');
+
+            //  Let gravity do its thing
+            star.body.gravity.y = 300;
+
+            //  This just gives each star a slightly random bounce value
+            star.body.bounce.y = 0.7 + Math.random() * 0.2;
+        }
+
         //Controls from KeyBorar.
         cursors = game.input.keyboard.createCursorKeys();
     }
@@ -120,6 +133,13 @@ Hola!
         {
             player.body.velocity.y = -350;
         }
+    }
+    //Implements Collect a Stars
+    function collectStar (player, star) {
+
+        // Removes the star from the screen
+        star.kill();
+
     }
 
 </script>
